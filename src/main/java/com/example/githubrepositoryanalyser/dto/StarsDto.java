@@ -1,6 +1,5 @@
 package com.example.githubrepositoryanalyser.dto;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
@@ -8,8 +7,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @Setter
 @Getter
-public class StargazersCountDto {
+public class StarsDto {
 
-    @JsonProperty("stargazers_sum")
-    private int stargazersSum;
+    private int stars;
 }

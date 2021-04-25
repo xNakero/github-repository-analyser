@@ -1,4 +1,4 @@
-package com.example.githubrepositoryanalyser.model;
+package com.example.githubrepositoryanalyser.dto;
 
 import com.fasterxml.jackson.annotation.JsonAlias;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -9,11 +9,9 @@ import lombok.Setter;
 @NoArgsConstructor
 @Getter
 @Setter
-public class GithubRepository {
+public class UserReposNumberDto {
 
-    @JsonProperty("name")
-    private String name;
-    @JsonAlias("stargazers_count")
-    @JsonProperty("stars")
-    private int stars;
+    @JsonProperty("repos")
+    @JsonAlias("public_repos")
+    private int repos;
 }
